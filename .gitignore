@@ -1,2 +1,5 @@
+/node_modules
 /target
-id.json
+id*.json
+notes.keys
+auditor-keypair.json
