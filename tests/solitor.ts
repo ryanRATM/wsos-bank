@@ -12,6 +12,7 @@ const idlObject = JSON.parse(idlString);
 const programID = new PublicKey(idl.metadata.address);
 
 describe("solitor", () => {
+
   // Configure the client to use the local cluster.
   const provider = anchor.AnchorProvider.local("http://127.0.0.1:8899");
   anchor.setProvider(provider);
@@ -24,10 +25,8 @@ describe("solitor", () => {
 
   console.log('user: ', user.publicKey);
   console.log('auditor: ', auditor.publicKey);
-  
 
-
-
+   
   it.skip("Is created!", async () => {
     const [ auditPDA ] = await PublicKey.findProgramAddressSync([
       utils.bytes.utf8.encode("sol-audit-trail"), 

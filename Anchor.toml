@@ -8,7 +8,7 @@ soliter = "2mCYvrwQNtUhCv626cwLfnco78pnGqVd6aNGZLvSKK7t"
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Localnet"
+cluster = "devnet" # localnet
 wallet = "id.json" # 6Ea9ahava567TXjJaAXKiFmQNDjivDz55SWWRAcmcuBq
 
 [scripts]
